@@ -8,17 +8,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 
-// Configuração do "carreteiro" que vai enviar o e-mail (SMTP)
-// Para testes, recomendo usar um serviço gratuito como o Mailtrap, ou o Gmail se configurar "Senha de App"
-const transportador = nodemailer.createTransport({
-  host: "sandbox.smtp.mailtrap.io", 
-  port: 2525,
-  auth: {
-        user: "diaseduardoyo@gmail.com", 
-        pass: "fhme pucp nrgk vuhe"     
-    }
-});
-
 // Defina uma chave secreta forte para assinar os tokens
 const SECRET_KEY = "EstoffeMoveisPlanejados2026";
 
